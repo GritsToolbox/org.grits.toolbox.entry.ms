@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<defaultPreferences>
+  <preference name="Underiv"/>
+  <preference name="perMe" selected="true"/>
+  <preference name="perDMe"/>
+  <preference name="perMe(C13)"/>
+  <preference name="perAc"/>
+  <preference name="perDAc"/>
+</defaultPreferences>

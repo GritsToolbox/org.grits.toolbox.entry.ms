@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+
+   <extension
+         point="org.grits.toolbox.core.preferencePages">
+      <page
+            category="org.grits.toolbox.entry.ms.topLevel"
+            class="org.grits.toolbox.entry.ms.preference.MassSpecPreferencePage"
+            id="org.grits.toolbox.entry.ms.all"
+            name="MS Experiment">
+      </page>
+      <page
+            category="org.grits.toolbox.entry.ms.all"
+            class="org.grits.toolbox.entry.ms.preference.viewer.MassSpecViewerPreferencePage"
+            id="plugin.ms.preference.viewer.MassSpecViewerPreference"
+            name="Results Viewer">
+      </page>
+      <page
+            category="org.grits.toolbox.entry.ms.all"
+            class="org.grits.toolbox.entry.ms.preference.viewer.MSConvertPreferencePage"
+            id="org.grits.toolbox.entry.ms.msconvert"
+            name="MSConvert">
+      </page>
+      <page
+            category="org.grits.toolbox.entry.ms.all"
+            class="org.grits.toolbox.entry.ms.preference.MassSpecCustomAnnotationPreferencePage"
+            id="org.grits.toolbox.entry.ms.customannotation"
+            name="Custom Annotation">
+      </page>
+      <page
+            category="org.grits.toolbox.entry.ms.all"
+            class="org.grits.toolbox.entry.ms.preference.MassSpecStandardQuantPreferencePage"
+            id="org.grits.toolbox.entry.ms.standardquantitation"
+            name="Quantification by Standards">
+      </page>
+      <page
+            class="org.grits.toolbox.entry.ms.preference.MassSpecTopLevelPreferencePage"
+            id="org.grits.toolbox.entry.ms.topLevel"
+            name="Mass Spec">
+      </page>
+      <page
+            category="org.grits.toolbox.entry.ms.all"
+            class="org.grits.toolbox.entry.ms.preference.viewer.GlycresoftPreferencePage"
+            id="org.grits.toolbox.entry.ms.glycresoft"
+            name="Glycresoft">
+      </page>
+   </extension>
+   <extension
+         point="org.grits.toolbox.core.propertyreader">
+      <reader
+            class="org.grits.toolbox.entry.ms.property.io.MassSpecPropertyReader"
+            propertyId="org.grits.toolbox.property.ms">
+      </reader>
+   </extension>
+   <extension
+         id="org.grits.toolbox.entry.ms.fragment"
+         point="org.eclipse.e4.workbench.model">
+      <fragment
+            uri="fragment.e4xmi">
+      </fragment>
+   </extension>
+
+</plugin>

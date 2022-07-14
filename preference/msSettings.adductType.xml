@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<defaultPreferences>
+  <preference name="Na" selected="true"/>
+  <preference name="H"/>
+  <preference name="Li"/>
+  <preference name="K"/>
+  <preference name="Cl"/>
+  <preference name="H2PO4"/>
+</defaultPreferences>

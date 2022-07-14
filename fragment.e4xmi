@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_A7k_oJesEeaQyJVS-36HMg">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_CH9TMJesEeaQyJVS-36HMg" featurename="children" parentElementId="org.grits.toolbox.core.menu.main.plugins">
+    <elements xsi:type="menu:Menu" xmi:id="_GMnbcJesEeaQyJVS-36HMg" elementId="org.grits.toolbox.entry.ms.menu.massspec" label="MS">
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_MUhdsJr1EeaQyJVS-36HMg" elementId="org.grits.toolbox.entry.ms.handledmenuitem.customannotation" label="Custom Annotation" iconURI="platform:/plugin/org.grits.toolbox.entry.ms/icons/CustomAnnotation.png" command="_0a4vEJr0EeaQyJVS-36HMg"/>
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_Hb_bYIKKEee66d9q2BQCUQ" elementId="org.grits.toolbox.entry.ms.handledmenuitem.externalquantitation" label="External Quantification" command="_NiCMkIKKEee66d9q2BQCUQ"/>
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_s5RakMlqEee_A5gxuaEG8Q" elementId="org.grits.toolbox.entry.ms.handledmenuitem.standardquantification" label="Quantification by Standards" command="_YX3MAMlqEee_A5gxuaEG8Q"/>
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_9UMlsBHIEei0S6dBnsSP0A" elementId="org.grits.toolbox.entry.ms.handledmenuitem.peakintensitycorrection" label="Correct Peak Intensities" command="_EUHlMBHJEei0S6dBnsSP0A"/>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_YbURMJrFEeaQyJVS-36HMg" featurename="bindingContexts" parentElementId="org.grits.toolbox.core.application">
+    <elements xsi:type="commands:BindingContext" xmi:id="_hdfcUJrFEeaQyJVS-36HMg" elementId="org.grits.toolbox.core.bindingcontext.entry" name="Entry" description="It is a context used for identifying entry context in grits"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_tcuOcJrFEeaQyJVS-36HMg" featurename="descriptors" parentElementId="org.grits.toolbox.core.application">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_wCsLIJrFEeaQyJVS-36HMg" elementId="plugin.ms.annotation.views.MassSpecPropertyViewer" label="Mass Spec Overview" iconURI="platform:/plugin/org.grits.toolbox.entry.ms/icons/massspectrum.png" bindingContexts="_hdfcUJrFEeaQyJVS-36HMg" allowMultiple="true" category="org.grits.toolbox.property.ms" closeable="true" dirtyable="true" contributionURI="bundleclass://org.grits.toolbox.entry.ms/org.grits.toolbox.entry.ms.views.tabbed.MassSpecOverviewPage">
+      <tags>default</tags>
+      <tags>perspective:org.grits.toolbox.core.perspective.msperspective</tags>
+      <tags>removeOnHide</tags>
+      <toolbar xmi:id="__1c1QCE4Eee93_TNp1fXXA" elementId="org.grits.toolbox.entry.ms.toolbar.0"/>
+    </elements>
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_uMAd4JrnEeaQyJVS-36HMg" elementId="plugin.ms.views.MSSpectraView" label="MS Spectra Viewer" allowMultiple="true" contributionURI="bundleclass://org.grits.toolbox.entry.ms/org.grits.toolbox.entry.ms.views.tabbed.MassSpecSpectraView"/>
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_A10RgJxwEeaQyJVS-36HMg" elementId="plugin.ms.annotation.views.MassSpecMultiPageViewer2" label="Mass Spec Scan View" iconURI="platform:/plugin/org.grits.toolbox.entry.ms/icons/massspectrum.png" bindingContexts="_hdfcUJrFEeaQyJVS-36HMg" allowMultiple="true" category="org.grits.toolbox.entry.ms.property.MassSpecProperty" closeable="true" dirtyable="true" contributionURI="bundleclass://org.grits.toolbox.entry.ms/org.grits.toolbox.entry.ms.views.tabbed.MassSpecMultiPageViewer">
+      <tags>default</tags>
+      <tags>perspective:org.grits.toolbox.core.perspective.msperspective</tags>
+      <tags>removeOnHide</tags>
+      <toolbar xmi:id="_cNoLwCE5Eee93_TNp1fXXA" elementId="org.grits.toolbox.entry.ms.toolbar.1">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_dboP8CE5Eee93_TNp1fXXA" elementId="org.grits.toolbox.entry.ms.handledtoolitem.customannotation" label="Custom Annotation" iconURI="platform:/plugin/org.grits.toolbox.entry.ms/icons/CustomAnnotation.png" tooltip="Add custom annotation" command="_0a4vEJr0EeaQyJVS-36HMg"/>
+      </toolbar>
+    </elements>
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_Z4GjMMAIEee9_ID610mfTw" elementId="ScanHierarchy" label="Mass Spec Scan Hierarchy" closeable="true" contributionURI="bundleclass://org.grits.toolbox.entry.ms/org.grits.toolbox.entry.ms.views.tabbed.MassSpecScanHierarchyView">
+      <tags>perspective:org.grits.toolbox.core.perspective.msperspective</tags>
+      <tags>removeOnHide</tags>
+      <toolbar xmi:id="_xIt-kAB1Eeiwy6fFwIJxEw" elementId="org.grits.toolbox.entry.ms.toolbar.2">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_qMc6kAB2Eeiwy6fFwIJxEw" elementId="org.grits.toolbox.entry.ms.handledtoolitem.expandall" label="Expand All" command="_1l6ioAB1Eeiwy6fFwIJxEw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_uF4DMAB2Eeiwy6fFwIJxEw" elementId="org.grits.toolbox.entry.ms.handledtoolitem.collapseall" label="Collapse All" command="_z2RxAAB1Eeiwy6fFwIJxEw"/>
+      </toolbar>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_4yjsMJrvEeaQyJVS-36HMg" featurename="commands" parentElementId="org.grits.toolbox.core.application">
+    <elements xsi:type="commands:Command" xmi:id="_6qgsUJrvEeaQyJVS-36HMg" elementId="org.grits.toolbox.entry.ms.handler.viewMassSpecResults" commandName="View Mass Spec Results"/>
+    <elements xsi:type="commands:Command" xmi:id="_0a4vEJr0EeaQyJVS-36HMg" elementId="org.grits.toolbox.core.menu.main.MassSpec.customAnnotation" commandName="MSCustomAnnotation"/>
+    <elements xsi:type="commands:Command" xmi:id="_Q_CiMGvREeelKYF_kXBeTg" elementId="org.grits.toolbox.entry.ms.command.msconvert" commandName="MSConvert"/>
+    <elements xsi:type="commands:Command" xmi:id="_NiCMkIKKEee66d9q2BQCUQ" elementId="org.grits.toolbox.core.menu.main.MassSpec.externalQuantitation" commandName="MSExternalQuantitation"/>
+    <elements xsi:type="commands:Command" xmi:id="_NwImYKhPEeeolq6r00xrZA" elementId="org.grits.toolbox.entry.ms.command.glycresoft" commandName="Glycresoft"/>
+    <elements xsi:type="commands:Command" xmi:id="_YX3MAMlqEee_A5gxuaEG8Q" elementId="org.grits.toolbox.core.menu.main.MassSpec.standardQuantification" commandName="MSStandardQuantification"/>
+    <elements xsi:type="commands:Command" xmi:id="_z2RxAAB1Eeiwy6fFwIJxEw" elementId="org.grits.toolbox.entry.ms.command.collapse" commandName="Collapse"/>
+    <elements xsi:type="commands:Command" xmi:id="_1l6ioAB1Eeiwy6fFwIJxEw" elementId="org.grits.toolbox.entry.ms.command.expand" commandName="Expand"/>
+    <elements xsi:type="commands:Command" xmi:id="_EUHlMBHJEei0S6dBnsSP0A" elementId="org.grits.toolbox.entry.ms.command.MassSpec.peakintensitycorrection" commandName="MSPeakIntensityCorrection"/>
+    <elements xsi:type="commands:Command" xmi:id="_L0VkkDwqEeiu57tDdjMo3Q" elementId="org.grits.toolbox.entry.ms.command.filterscans" commandName="FilterScans"/>
+    <elements xsi:type="commands:Command" xmi:id="_wH33cLPJEemSyco6TU5pTw" elementId="org.grits.toolbox.entry.ms.command.spectraaverage" commandName="SpectraAverage"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_I7rE0JrwEeaQyJVS-36HMg" featurename="handlers" parentElementId="org.grits.toolbox.core.application">
+    <elements xsi:type="commands:Handler" xmi:id="_LiyRAJrwEeaQyJVS-36HMg" elementId="org.grits.toolbox.entry.ms.handler.viewMassSpec" contributionURI="bundleclass://org.grits.toolbox.entry.ms/org.grits.toolbox.entry.ms.handler.ViewMassSpecResults" command="_6qgsUJrvEeaQyJVS-36HMg"/>
+    <elements xsi:type="commands:Handler" xmi:id="_ynxysJr0EeaQyJVS-36HMg" elementId="org.grits.toolbox.entry.ms.handler.0" contributionURI="bundleclass://org.grits.toolbox.entry.ms/org.grits.toolbox.entry.ms.handler.ShowMassSpecCustomAnnotationDialog" command="_0a4vEJr0EeaQyJVS-36HMg"/>
+    <elements xsi:type="commands:Handler" xmi:id="_cPHvUGvREeelKYF_kXBeTg" elementId="org.grits.toolbox.entry.ms.handler.msconvert" contributionURI="bundleclass://org.grits.toolbox.entry.ms/org.grits.toolbox.entry.ms.handler.MSConvertHandler" command="_Q_CiMGvREeelKYF_kXBeTg"/>
+    <elements xsi:type="commands:Handler" xmi:id="_sO3tUIKKEee66d9q2BQCUQ" elementId="org.grits.toolbox.entry.ms.handler.2" contributionURI="bundleclass://org.grits.toolbox.entry.ms/org.grits.toolbox.entry.ms.handler.ShowMassSpecExternalQuantitationDialog" command="_NiCMkIKKEee66d9q2BQCUQ"/>
+    <elements xsi:type="commands:Handler" xmi:id="_QqFPAKhPEeeolq6r00xrZA" elementId="org.grits.toolbox.entry.ms.handler.glycresoft" contributionURI="bundleclass://org.grits.toolbox.entry.ms/org.grits.toolbox.entry.ms.handler.GlycresoftHandler" command="_NwImYKhPEeeolq6r00xrZA"/>
+    <elements xsi:type="commands:Handler" xmi:id="_4dAjgMlqEee_A5gxuaEG8Q" elementId="org.grits.toolbox.entry.ms.handler.standardquantification" contributionURI="bundleclass://org.grits.toolbox.entry.ms/org.grits.toolbox.entry.ms.handler.ShowMassSpecStandardQuantificationDialog" command="_YX3MAMlqEee_A5gxuaEG8Q"/>
+    <elements xsi:type="commands:Handler" xmi:id="_3z6EMAB1Eeiwy6fFwIJxEw" elementId="org.grits.toolbox.entry.ms.handler.collapse" contributionURI="bundleclass://org.grits.toolbox.entry.ms/org.grits.toolbox.entry.ms.handler.CollapseHandler" command="_z2RxAAB1Eeiwy6fFwIJxEw"/>
+    <elements xsi:type="commands:Handler" xmi:id="_CHS_kAB2Eeiwy6fFwIJxEw" elementId="org.grits.toolbox.entry.ms.handler.expand" contributionURI="bundleclass://org.grits.toolbox.entry.ms/org.grits.toolbox.entry.ms.handler.ExpandHandler" command="_1l6ioAB1Eeiwy6fFwIJxEw"/>
+    <elements xsi:type="commands:Handler" xmi:id="_2bK7kBHMEei0S6dBnsSP0A" elementId="org.grits.toolbox.entry.ms.handler.peakintensitycorrection" contributionURI="bundleclass://org.grits.toolbox.entry.ms/org.grits.toolbox.entry.ms.handler.ShowMassSpecPeakIntensityDialog" command="_EUHlMBHJEei0S6dBnsSP0A"/>
+    <elements xsi:type="commands:Handler" xmi:id="_pxnQoDwqEeiu57tDdjMo3Q" elementId="org.grits.toolbox.entry.ms.handler.filterscans" contributionURI="bundleclass://org.grits.toolbox.entry.ms/org.grits.toolbox.entry.ms.handler.FilterHandler" command="_L0VkkDwqEeiu57tDdjMo3Q"/>
+    <elements xsi:type="commands:Handler" xmi:id="_5IQS0LPJEemSyco6TU5pTw" elementId="org.grits.toolbox.entry.ms.handler.spectraaverage" contributionURI="bundleclass://org.grits.toolbox.entry.ms/org.grits.toolbox.entry.ms.handler.SpectraAverageHandler" command="_wH33cLPJEemSyco6TU5pTw"/>
+  </fragments>
+</fragment:ModelFragments>
